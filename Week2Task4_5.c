@@ -53,10 +53,13 @@ int main() {
     }
     
     printf("Task 6\n");
-    int speed2 = 75; // Example speed
+    printf("What is you speed now?\n");
+    
+    int speed2; 
     int speedLimit2 = 60; // Example speed limit
+    scanf("%d", &speed2);
     int difference = speed2 - speedLimit2;
-
+    
     if (difference > 10) {
         printf("Your speed is %d, the speed limit is %d. You exceeded the limit by %d mph. You’re Speeding! Ticket and possible court summons for you!\n", speed2, speedLimit2, difference);
     } else if (difference > 0) {
@@ -78,13 +81,14 @@ int main() {
         printf("It is New Years Day\n");
     } else if (day2 == 4 && month2 == 5) {
         printf("It is Star Wars Day (May the 4th be with you)\n");
-    } else if (day2 == 15 && month2 == 8) { // Example: Your birthday
+    } else if (day2 == 11 && month2 == 4) { 
         printf("Happy Birthday!\n");
     } else {
         printf("Just another date\n");
     }
 
     printf("Task 8\n");
+    printf("Now the ticket price relative to your age\n");
     double normalPrice = 4.0;
     double ticketPrice;
 
